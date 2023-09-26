@@ -1,0 +1,24 @@
+# Compile of tb_CLA_block.vhd was successful with warnings.
+vsim -voptargs=+acc work.tb_cla_block
+# End time: 17:26:32 on Sep 25,2023, Elapsed time: 0:07:04
+# Errors: 1, Warnings: 3
+# vsim -voptargs="+acc" work.tb_cla_block 
+# Start time: 17:26:32 on Sep 25,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.tb_cla_block(behavioral)#1
+# Loading work.cla_block(mixed)#1
+# Loading work.fulladder(fast)#1
+add wave -position insertpoint sim:/tb_cla_block/DUT/*
+run -all
+# ** Note: Ferdig!
+#    Time: 70 ns  Iteration: 0  Instance: /tb_cla_block
+# Break in Process line__40 at /uio/hume/student-u26/jorundht/IN2060/oppgaver/tb_CLA_block.vhd line 56
+run -all
+# ** Note: Alt stemmer!
+#    Time: 140 ns  Iteration: 0  Instance: /tb_cla_block
+# Break in Process line__40 at /uio/hume/student-u26/jorundht/IN2060/oppgaver/tb_CLA_block.vhd line 56
+run -next
