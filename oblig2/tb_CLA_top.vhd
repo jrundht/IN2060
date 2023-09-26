@@ -80,7 +80,7 @@ begin
 	tb_a <= std_logic_vector(to_unsigned(15,32)); 
 	tb_b <= std_logic_vector(to_unsigned(25,32)); tb_cin <= '1'; wait for 10 ns;
 	assert (tb_s = std_logic_vector(to_unsigned(41,32)) and tb_cout = '0') 
-	report "Failure, test 5 : Expected sum = " & to_string(to_unsigned(3,32)) & ", got " & to_string(unsigned(tb_s)) 
+	report "Failure, test 5 : Expected sum = " & to_string(to_unsigned(41,32)) & ", got " & to_string(unsigned(tb_s)) 
 		& ". Expected cout = '0', got " & to_string(tb_cout) severity failure;
 
 	-- Test 6

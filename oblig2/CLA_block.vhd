@@ -41,8 +41,8 @@ begin
   cout <= ((((((p(1) and g(0)) or g(1)) and p(2)) or g(2)) and p(3)) or g(3)) or ((and p) and cin); -- = c(4)
   --cout <= c(4);
 
-  FA1: fulladder port map(a(0), b(0), c(0), s(0));
-  FA2: fulladder port map(a(1), b(1), c(1), s(1));
-  FA3: fulladder port map(a(2), b(2), c(2), s(2));
-  FA4: fulladder port map(a(3), b(3), c(3), s(3));
+FA1: fulladder port map(a(0), b(0), c(0), c(1), s(0));
+FA2: fulladder port map(a(1), b(1), c(1), c(2), s(1));
+FA3: fulladder port map(a(2), b(2), c(2), c(3), s(2));
+FA4: fulladder port map(a(3), b(3), c(3), c(4), s(3));
 end mixed;
