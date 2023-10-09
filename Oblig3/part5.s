@@ -43,7 +43,8 @@ smaller:
     LSL r4, r5, r6
 
 addM:
-    ADD r0, r4, r5  
+    ADD r0, r4, r5
+    ADD r0, r0, r2
     @ When done, return
     BX lr
 
