@@ -43,8 +43,9 @@ smaller:
     LSL r4, r5, r6
 
 addM:
-    ADD r0, r4, r5  
+    ADD r0, r4, r5
+    LSR r0, r0, #1 @ Move mantissa  
+    ADD r0, r0, r2
+    ADD r0, r0, #0x00800000
     @ When done, return
     BX lr
-
-
