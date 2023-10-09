@@ -1,0 +1,56 @@
+Tekstoppgaver del 2:
+1. 
+	Kalleren har ansvaret for å ta vare på r0-r3, funksjonen har ansvar for å plassere resultatet
+	i r0. funksjonen må mellomlagre verdier fra r0-r3 i registeret dersom den trenger de. r4-r11 skal 
+	være umodifiserte, så disse må evt også lagres i register mens funksjonen "låner" de.
+2. 
+	Input-argumentet ble lagret i registeret, mens fib brukte det. Derfor er dette det samme når funksjonen
+	har lastet det tilbake fra register. Men får load kalles, er input argumentet 0, fordi denne variabelen
+	ble brukt som teller.
+3. 
+	Siden main ikke har noen ordentlig return-point å gå til, gjorde jeg et kall på SWI som avslutter 
+	programmet
+	
+Tekstoppgaver del 3:
+1.
+	Logikken ser ut til å være tilsvarende, men det er gjort på en mer uleselig måte. 
+	Siden det er gjort om fra C-kode, inneholder den masse includes eller hva man skal kalle det. 
+	Men f.eks måten loopen er konstruert ser veldig lik ut. Det er brukt noe save, pop og push som jeg ikke
+	har benyttet meg av.
+2. 
+	Koden som produseres blir mer leselig, enn den tidligere.
+3. 
+	- Å skrive kode i ved hjelp av en kompilator er som regel mye raskerer enn ved Assembler
+	- Mer overførbart til andre OS, vil være færre endringer som skal til sammenlignet med assembler
+	  kode som er spesifikt for prosessorakritektur.
+	- Enklere å feilsøke
+	
+	- Assembler gir bedre kontroll over maskinvaren, som kan hjelpe med ytelse og utnyttelse av maskinvarefunksjoner
+	- Assembler kode er mer tidkrevende
+	- Assembler kode gir bedre muligheter for optimalisering av ytelse.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
