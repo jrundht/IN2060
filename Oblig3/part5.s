@@ -49,7 +49,7 @@ addM:
     ADD r0, r4, r5
     
     @ Check if ormalize is necessary
-    TST r0, #0x1000000 @ check if there is an overflow into the next bit
+    TST r0, #0x1000000 @ check if there is an overflow into bit 25
     BEQ removeLeading
 
 tooLarge:    
